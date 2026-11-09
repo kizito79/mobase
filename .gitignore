@@ -1,7 +1,10 @@
 node_modules/
+.env
+.env.*
+.vercel/
+# Raw LiDAR sources (the viewer uses the prepared files in data/, not these)
 *.las
 *.laz
 *.e57
 *.ply
-*.bin
-.env
+# NOTE: do not ignore *.bin, the viewer needs data/*/pos-f32-*.bin and model-glb-*.bin
