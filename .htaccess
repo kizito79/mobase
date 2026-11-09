@@ -1,0 +1,7 @@
+# Binary data types used by the LiDAR viewer
+AddType application/octet-stream .f32 .u8 .u16 .bin
+AddType model/gltf-binary .glb
+AddType image/webp .webp
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE application/octet-stream application/json text/javascript text/css text/html
+</IfModule>
